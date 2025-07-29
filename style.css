@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tela-inicial {
+  /* background-image: url('imagens/fundo-inicial.jpg'); */
+  background-color: blueviolet;
+
+}
+
+.tela-sucesso {
+  /* background-image: url('imagens/fundo-sucesso.jpg'); */
+  background-color: blueviolet;
+}
+
+.tela-erro {
+  /* background-image: url('imagens/fundo-erro.jpg'); */
+  background-color: blueviolet;
+
+}
