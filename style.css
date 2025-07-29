@@ -10,17 +10,89 @@ body {
 }
 
 .tela-inicial {
- background-image: url('imagens/fundo-inicial.png');
-
+  background-image: url('imagens/fundo-inicial-pc.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .tela-sucesso {
-  /* background-image: url('imagens/fundo-sucesso.jpg'); */
-  background-color: blueviolet;
+  background-image: url('imagens/fundo-sucesso-pc.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .tela-erro {
-  /* background-image: url('imagens/fundo-erro.jpg'); */
-  background-color: blueviolet;
+  background-image: url('imagens/fundo-erro-pc.png');
+  background-size: cover;
+  background-position: center;
+}
 
+@media (max-width: 768px) {
+
+  .tela-inicial {
+    background-image: url('imagens/fundo-inicial-celular.png');
+
+  }
+
+  .tela-sucesso {
+    background-image: url('imagens/fundo-sucesso-celular.png');
+
+  }
+
+  .tela-erro {
+    background-image: url('imagens/fundo-erro-celular.png');
+
+  }
+
+}
+
+.btn-coquette {
+  background-color: #f8c8dc;
+  /* rosa claro */
+  color: #6b0037;
+  /* vinho */
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+  width: auto;
+  min-width: 100px;
+}
+
+.btn-coquette:hover {
+  background-color: #f3a8c2;
+  color: white;
+}
+
+.input-coquette {
+  background-color: rgba(255, 200, 220, 0.3);
+  /* rosa bem clarinho e translúcido */
+  border: 2px solid #f3a8c2;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #6b0037;
+}
+
+.input-coquette::placeholder {
+  color: #a25e7b;
+  font-style: italic;
+}
+
+.container {
+  background-color: rgba(255, 230, 240, 0.425);
+}
+
+h1 {
+  color: #e3798f;
+  text-shadow:
+    -1.5px -1.5px 0 #fff,
+    1.5px -1.5px 0 #fff,
+    -1.5px 1.5px 0 #fff,
+    1.5px 1.5px 0 #fff;
 }
