@@ -11,23 +11,26 @@ body {
 
 .tela-inicial {
   background-image: url('imagens/fundo-inicial-pc.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .tela-sucesso {
   background-image: url('imagens/fundo-sucesso-pc.png');
-  background-size: cover;
-  background-position: center;
 }
 
 .tela-erro {
   background-image: url('imagens/fundo-erro-pc.png');
-  background-size: cover;
-  background-position: center;
 }
 
-@media (max-width: 768px) {
+.tela-inicial,
+.tela-sucesso,
+.tela-erro {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1024px) {
 
   .tela-inicial {
     background-image: url('imagens/fundo-inicial-celular.png');
